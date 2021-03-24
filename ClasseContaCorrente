@@ -1,0 +1,75 @@
+Classe ContaCorrente
+
+import java.util.Scanner;
+
+public class ContaCorrente extends Conta{
+Scanner leia = new Scanner(System.in);
+private String nome;
+private String dta_nasc;
+private double valor;
+private double saldo;
+
+public ContaCorrente() {
+	System.out.println("Estamos processando sua solicitação!");
+	System.out.println("Nome: ");
+	nome = leia.nextLine();
+	System.out.println("Data de Nascimento: ");
+	dta_nasc = leia.nextLine();
+	System.out.println("Valor do depósito");
+	valor = leia.nextDouble();
+	depositoInicial(valor);
+	System.out.println("Bem Vindo(a), " + nome);
+	System.out.println("Sua Conta Corrente já está em operação!");
+}
+
+public double sacar(double valor) {
+	System.out.println("Valor do saque: ");
+	valor = leia.nextDouble();
+	System.out.println("Realizando Saque... " + valor);
+	return saldo = saldo - valor;
+}
+
+public double depositar(double valor) {
+	System.out.println("Valor do depósito: ");
+	valor = leia.nextDouble();
+	System.out.println("Realizando Depósito... " + valor);
+	return saldo = saldo + valor;
+}
+
+public double depositoInicial(double valor) {
+	return saldo = saldo + valor;
+}
+
+
+public String getTitular() {
+	return nome;
+}
+
+public void setNome(String nome) {
+	this.nome = nome;
+}
+
+public String getdta_nasc() {
+	return dta_nasc;
+}
+
+public void setdta_nasc(String dta_nasc) {
+	this.dta_nasc = dta_nasc;
+}
+
+public double getValor() {
+	return valor;
+}
+
+public void setValor(double valor) {
+	this.valor = valor;
+}
+
+public double getSaldo() {
+	return saldo;
+}
+
+public void setSaldo(double saldo) {
+	this.saldo = saldo;
+}
+}
