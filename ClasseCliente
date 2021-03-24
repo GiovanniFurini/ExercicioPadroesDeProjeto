@@ -1,0 +1,21 @@
+public  class  Cliente {
+
+    private  String nome;
+    private  String dta_nasc;
+	
+    public  String  getNome () {
+        return nome;
+    }
+    public  void  setNome ( String  nome ) {
+        isso . nome = nome;
+    }
+    public  String  getDta_nasc () {
+        return dta_nasc;
+    }
+    public  void  setDta_nasc ( String  dta_nasc ) {
+        isso . dta_nasc = dta_nasc;
+    }
+    @Sobrepor
+    public  String  toString () {
+        retornar  " Cleinet [nome = "  + nome +  " - dados nascimento = "  + dadosNascimento + " ] " ;
+    }
