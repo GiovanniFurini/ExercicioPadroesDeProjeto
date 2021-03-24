@@ -1,0 +1,36 @@
+public  abstract  class  Conta {
+     saldo double privado ;
+     Cliente cliente privado ;
+   
+     Conta pública ( saldo double, Cliente cliente ) {  
+        isso . saldo = saldo;
+        isso . cliente = cliente;
+    }
+   
+    public  double  getSaldo () {
+        return saldo;
+    }
+    public  void  setSaldo ( saldo duplo  ) {
+        isso . saldo = saldo;
+    }
+    
+    public  Cliente  getCliente () {
+        return cliente;
+    }
+    public  void  setCliente ( Cliente  cliente ) {
+        isso . cliente = cliente;
+    }
+
+    public  void  sacar () {
+
+    }
+
+    public  void  depositar () {
+        
+    }
+
+    public  void  saldoTotal () {
+        
+    }
+    
+}
