@@ -1,0 +1,71 @@
+Classe ContaPoupanca
+
+import java.util.Scanner;
+
+public class ContaPoupanca extends Conta{
+Scanner leia = new Scanner(System.in);
+private String nome;
+private float dta_nasc;
+private double valor;
+private double saldo;
+
+public ContaPoupanca() {
+	System.out.println("Estamos processando sua solicitação!");
+	System.out.println("Nome: ");
+	nome = leia.nextLine();
+	System.out.println("Data de Nascimento: ");
+	dta_nasc = leia.nextLine();
+	System.out.println("Valor do depósito");
+	valor = leia.nextDouble();
+	super.depositar();
+	System.out.println("Bem Vindo(a), " + titular);
+	System.out.println("Sua Conta Poupança já está em operação!");
+}
+
+public double sacar(double valor) {
+	System.out.println("Valor do saque: ");
+	valor = leia.nextDouble();
+	System.out.println("Realizando Saque... " + valor);
+	return saldo = saldo - valor;
+}
+
+public double depositar(double valor) {
+	System.out.println("Valor do depósito: ");
+	valor = leia.nextDouble();
+	System.out.println("Realizando Depósito... " + valor);
+	return saldo = saldo + valor;
+}
+
+
+public double getValor() {
+	return valor;
+}
+
+public void setValor(double valor) {
+	this.valor = valor;
+}
+
+public String getNome() {
+	return nome;
+}
+
+public void setNome(String nome) {
+	this.nome = nome;
+}
+
+public String getDta_nasc() {
+	return dta_nasc;
+}
+
+public void setDta_nasc(String dta_nasc) {
+	this.dta_nasc = dta_nasc;
+}
+
+public double getSaldo() {
+	return saldo;
+}
+
+public void setSaldo(double saldo) {
+	this.saldo = saldo;
+}
+}
